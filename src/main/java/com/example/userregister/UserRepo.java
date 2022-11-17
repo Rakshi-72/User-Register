@@ -1,2 +1,10 @@
-package com.example.userregister;public interface UserRepo {
+package com.example.userregister;
+
+import com.example.userregister.models.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
+
+public interface UserRepo extends JpaRepository<User, Integer> {
+Optional<User> findByEmail(String email);
 }

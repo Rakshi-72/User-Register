@@ -1,2 +1,15 @@
-package com.example.userregister.models;public class LoginModal {
+package com.example.userregister.models;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class LoginModal {
+    private String userName ;
+    private String password ;
 }
